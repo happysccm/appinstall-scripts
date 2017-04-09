@@ -46,5 +46,3 @@ IF EXIST %SystemDrive%\install.res.3082.dll DEL /Q %SystemDrive%\install.res.308
 IF EXIST %SystemDrive%\vcredist.bmp DEL /Q %SystemDrive%\vcredist.bmp
 IF EXIST %SystemDrive%\VC_RED.cab DEL /Q %SystemDrive%\VC_RED.cab
 IF EXIST %SystemDrive%\VC_RED.MSI DEL /Q %SystemDrive%\VC_RED.MSI
-
-EXIT 0
