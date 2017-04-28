@@ -1,0 +1,46 @@
+<Redistributables>
+    <Platform Architecture="x64" Release="2015">
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Redistributable Package (x64)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=21254</URL>
+            <Download>https://download.microsoft.com/download/9/1/4/914851c6-9141-443b-bdb4-8bad3a57bea9/vcredist_x64.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x64)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=18471</URL>
+            <Download>https://download.microsoft.com/download/d/4/1/d41aca8a-faa5-49a7-a5f2-ea0aa4587da0/vcredist_x64.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=14431</URL>
+            <Download>https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x64.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
+            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE</Download>
+        </Redistributable>
+    </Platform>
+    <Platform Architecture="x86" Release="2015">
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Redistributable Package (x86)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=3387</URL>
+            <Download>https://download.microsoft.com/download/d/3/4/d342efa6-3266-4157-a2ec-5174867be706/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=5638</URL>
+            <Download>https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=14431</URL>
+            <Download>https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
+            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE</Download>
+        </Redistributable>
+    </Platform>    
+</Redistributables>
