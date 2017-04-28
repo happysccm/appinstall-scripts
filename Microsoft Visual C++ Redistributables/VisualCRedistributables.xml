@@ -182,5 +182,5 @@
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
             <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe</Download>
         </Redistributable>
-</Platform>
+    </Platform>
 </Redistributables>
