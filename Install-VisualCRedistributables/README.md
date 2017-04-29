@@ -7,21 +7,21 @@ This can be run to download and optionally install the Visual C++ (2005 - 2015) 
 
 The basic structure of the XML file should be:
 
-<Redistributables>
-	<Platform Architecture="x64" Release="" Install="">
-		<Redistributable>
-			<Name></Name>
-			<URL></URL>
-			<Download></Download>
-	</Platform>
-	<Platform Architecture="x86" Release="" Install="">
-		<Redistributable>
-			<Name></Name>
-			<URL></URL>
-			<Download></Download>
-		</Redistributable>
-	</Platform>
-</Redistributables>
+    <Redistributables>
+    <Platform Architecture="x64" Release="" Install="">
+    <Redistributable>
+    <Name></Name>
+    <URL></URL>
+    <Download></Download>
+    </Platform>
+    <Platform Architecture="x86" Release="" Install="">
+    <Redistributable>
+    <Name></Name>
+    <URL></URL>
+    <Download></Download>
+    </Redistributable>
+    </Platform>
+    </Redistributables>
 
 ## Parameters
 ### File
@@ -29,14 +29,14 @@ The XML file that contains the details about the Visual C++ Redistributables. Th
 
 Example - Downloads the Visual C++ Redistributables listed in VisualCRedistributables.xml.
 
-```.\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml"```
+    .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml"```
 
 ### Path
 Specify a target folder to download the Redistributables to, otherwise use the current folder.
 
 Example - Downloads the Visual C++ Redistributables listed in VisualCRedistributables.xml to C:\Redist.
 
-```.\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Path C:\Redist```
+    .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Path C:\Redist```
 
 
 ### Install
@@ -44,7 +44,7 @@ By default the script will only download the Redistributables. Add -Install to i
 
 Example - Downloads and installs the Visual C++ Redistributables listed in VisualCRedistributables.xml.
 
-```.\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Install:$True```
+    .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Install:$True```
 
 
 
