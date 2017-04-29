@@ -10,20 +10,20 @@
         The basic structure of the XML file should be:
 
         <Redistributables>
-        <Platform Architecture="x64" Release="" Install="">
-            <Redistributable>
-                <Name></Name>
-                <URL></URL>
-                <Download></Download>
-        </Platform>
-        <Platform Architecture="x86" Release="" Install="">
-            <Redistributable>
-                <Name></Name>
-                <URL></URL>
-                <Download></Download>
-            </Redistributable>
-        </Platform>
-    </Redistributables>
+            <Platform Architecture="x64" Release="" Install="">
+                <Redistributable>
+                    <Name></Name>
+                    <URL></URL>
+                    <Download></Download>
+            </Platform>
+            <Platform Architecture="x86" Release="" Install="">
+                <Redistributable>
+                    <Name></Name>
+                    <URL></URL>
+                    <Download></Download>
+                </Redistributable>
+            </Platform>
+        </Redistributables>
 
     .NOTES   
         Name: Install-VisualCRedistributables.ps1
@@ -53,10 +53,10 @@
         Downloads the Visual C++ Redistributables listed in VisualCRedistributables.xml to C:\Redist.
 
     .PARAMETER Install
-        By default the script will only download the Redistributables. Add -Install to install each of the Redistributables as well.
+        By default the script will only download the Redistributables. Add -Install:$True to install each of the Redistributables as well.
 
     .EXAMPLE
-        .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Install
+        .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Install:$True
 
         Description:
         Downloads and installs the Visual C++ Redistributables listed in VisualCRedistributables.xml.
