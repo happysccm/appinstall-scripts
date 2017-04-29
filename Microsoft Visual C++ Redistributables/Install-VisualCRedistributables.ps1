@@ -34,7 +34,7 @@
     .LINK
         http://stealthpuppy.com
 
-    .PARAMETER Xml
+    .PARAMETER File
         The XML file that contains the details about the Visual C++ Redistributables. This must be in the expected format.
 
     .EXAMPLE
@@ -42,6 +42,15 @@
 
         Description:
         Downloads the Visual C++ Redistributables listed in VisualCRedistributables.xml.
+
+    .PARAMETER Path
+        Specify a target folder to download the Redistributables to, otherwise use the current folder.
+
+    .EXAMPLE
+        .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Path C:\Redist
+
+        Description:
+        Downloads the Visual C++ Redistributables listed in VisualCRedistributables.xml to C:\Redist.
 
     .PARAMETER Install
         By default the script will only download the Redistributables. Add -Install to install each of the Redistributables as well.
@@ -60,6 +69,7 @@ PARAM (
     [string]$File,
 
     [Parameter(Mandatory=$False, HelpMessage="Specify a target path to download the Redistributables to.")]
+    [ValidateScript({ Test-Path $_ -PathType 'Container' })]
     [string]$Path = ".\",
 
     [Parameter(Mandatory=$False, HelpMessage="Enable the installation of the Redistributables after download.")]
