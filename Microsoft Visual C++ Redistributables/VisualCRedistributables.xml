@@ -161,12 +161,22 @@
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
             <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe</Download>
         </Redistributable>
+        <Redistributable>
+            <Name>Update for Visual C++ 2013 and Visual C++ Redistributable Package</Name>
+            <URL>https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package</URL>
+            <Download>http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x64.exe</Download>
+        </Redistributable>
     </Platform>
     <Platform Architecture="x86" Release="2013" Install="/CEIPconsent /norestart /passive">
         <Redistributable>
             <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
             <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Update for Visual C++ 2013 and Visual C++ Redistributable Package</Name>
+            <URL>https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package</URL>
+            <Download>http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
     <Platform Architecture="x64" Release="2015" Install="/CEIPconsent /norestart /passive">
@@ -175,12 +185,22 @@
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
             <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe</Download>
         </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2015 Redistributable Update 3</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=53840</URL>
+            <Download>https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe</Download>
+        </Redistributable>
     </Platform>
     <Platform Architecture="x86" Release="2015" Install="/CEIPconsent /norestart /passive">
         <Redistributable>
             <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
             <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2015 Redistributable Update 3</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=53840</URL>
+            <Download>https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe</Download>
         </Redistributable>
     </Platform>
 </Redistributables>
