@@ -5,7 +5,7 @@
     .DESCRIPTION
         This script will download the Visual C++ Redistributables listed in an external XML file into a folder structure that represents release and processor architecture.
 
-        This can be run to download and optionally install the Visual C++ (2005 - 2015) Redistributables as specified in the external XML file passed to the script.
+        This can be run to download and optionally install the Visual C++ Redistributables as specified in the external XML file passed to the script.
 
         The basic structure of the XML file should be:
 
@@ -29,7 +29,7 @@
         Name: Install-VisualCRedistributables.ps1
         Author: Aaron Parker
         Version: 1.0
-        DateUpdated: 2017-04-29
+        DateUpdated: 2017-04-30
 
     .LINK
         http://stealthpuppy.com

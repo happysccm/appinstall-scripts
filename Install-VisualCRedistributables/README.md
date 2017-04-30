@@ -3,7 +3,7 @@ This script will download the Visual C++ Redistributables listed in an external 
 
 *NOTE:* some validation of the Redistributables listed in the XML file is required, as not all need to be installed.
 
-This can be run to download and optionally install the Visual C++ (2005 - 2015) Redistributables as specified in the external XML file passed to the script.
+This can be run to download and optionally install the Visual C++ (2005 - 2017) Redistributables as specified in the external XML file passed to the script.
 
 The basic structure of the XML file should be:
 
