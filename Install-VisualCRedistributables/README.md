@@ -5,7 +5,7 @@ This script will download the Visual C++ Redistributables listed in an external 
 
 This can be run to download and optionally install the Visual C++ (2005 - 2017) Redistributables as specified in the external XML file passed to the script.
 
-The basic structure of the XML file should be:
+The basic structure of the XML file should be as follows (an XSD schema is included in the repository):
 
     <Redistributables>
     <Platform Architecture="x64" Release="" Install="">
@@ -22,6 +22,8 @@ The basic structure of the XML file should be:
     </Redistributable>
     </Platform>
     </Redistributables>
+
+The Redistributables will install in the order specified in the XML file.
 
 ## Parameters
 ### File
