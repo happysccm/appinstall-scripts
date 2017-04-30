@@ -40,11 +40,19 @@ Example - Downloads the Visual C++ Redistributables listed in VisualCRedistribut
 
 
 ### Install
-By default the script will only download the Redistributables. Add -Install to install each of the Redistributables as well.
+By default the script will only download the Redistributables. This allows you to download the Redistributables for seperate deployment (e.g. in a reference image). Add -Install to install each of the Redistributables as well.
 
 Example - Downloads and installs the Visual C++ Redistributables listed in VisualCRedistributables.xml.
 
     .\Install-VisualCRedistributables.ps1 -Xml ".\VisualCRedistributables.xml" -Install:$True
 
+## Results
+Here is an example of the end result with the Redistributables installed. Note that 2015 and 2017 are the same major version (14.x), so once 2017 is installed, 2015 will not be displayed in the programs list.
 
+Visual C++ Redistributables 2005 to 2015 installed:
 
+![Visual C++ Redistributables 2005-2015](https://raw.githubusercontent.com/aaronparker/appinstall-scripts/master/Install-VisualCRedistributables/images/2005-2015.PNG "Visual C++ Redistributables 2005-2015")
+
+Visual C++ Redistributables 2005 to 2017 (including 2015) installed:
+
+![Visual C++ Redistributables 2005-2017](https://raw.githubusercontent.com/aaronparker/appinstall-scripts/master/Install-VisualCRedistributables/images/2005-2017.PNG "Visual C++ Redistributables 2005-2017")
