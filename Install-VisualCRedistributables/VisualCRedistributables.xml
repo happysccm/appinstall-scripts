@@ -3,14 +3,9 @@
 <Redistributables>
     <Platform Architecture="x64" Release="2005" Install="/Q">
         <Redistributable>
-            <Name>Microsoft Visual C++ 2005 Redistributable Package (x64)</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=21254</URL>
-            <Download>https://download.microsoft.com/download/9/1/4/914851c6-9141-443b-bdb4-8bad3a57bea9/vcredist_x64.exe</Download>
-        </Redistributable>
-        <Redistributable>
-            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x64)</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=18471</URL>
-            <Download>https://download.microsoft.com/download/d/4/1/d41aca8a-faa5-49a7-a5f2-ea0aa4587da0/vcredist_x64.exe</Download>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
+            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE</Download>
         </Redistributable>
         <Redistributable>
             <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</Name>
@@ -18,21 +13,21 @@
             <Download>https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x64.exe</Download>
         </Redistributable>
         <Redistributable>
-            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
-            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE</Download>
+            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x64)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=18471</URL>
+            <Download>https://download.microsoft.com/download/d/4/1/d41aca8a-faa5-49a7-a5f2-ea0aa4587da0/vcredist_x64.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Redistributable Package (x64)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=21254</URL>
+            <Download>https://download.microsoft.com/download/9/1/4/914851c6-9141-443b-bdb4-8bad3a57bea9/vcredist_x64.exe</Download>
         </Redistributable>
     </Platform>
     <Platform Architecture="x86" Release="2005" Install="/Q">
         <Redistributable>
-            <Name>Microsoft Visual C++ 2005 Redistributable Package (x86)</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=3387</URL>
-            <Download>https://download.microsoft.com/download/d/3/4/d342efa6-3266-4157-a2ec-5174867be706/vcredist_x86.exe</Download>
-        </Redistributable>
-        <Redistributable>
-            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=5638</URL>
-            <Download>https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe</Download>
+            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
+            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE</Download>
         </Redistributable>
         <Redistributable>
             <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</Name>
@@ -40,9 +35,14 @@
             <Download>https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x86.exe</Download>
         </Redistributable>
         <Redistributable>
-            <Name>Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26347</URL>
-            <Download>https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE</Download>
+            <Name>Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=5638</URL>
+            <Download>https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe</Download>
+        </Redistributable>
+        <Redistributable>
+            <Name>Microsoft Visual C++ 2005 Redistributable Package (x86)</Name>
+            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=3387</URL>
+            <Download>https://download.microsoft.com/download/d/3/4/d342efa6-3266-4157-a2ec-5174867be706/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
     <Platform Architecture="x64" Release="2008" Install="/Q">
@@ -109,8 +109,8 @@
             <Download>https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x64" Release="2010" Install="/CEIPconsent /norestart /passive">
-        <Redistributable>
+    <Platform Architecture="x64" Release="2010" Install="/passive /norestart">
+<!-->        <Redistributable>
             <Name>Microsoft Visual C++ 2010 Redistributable Package (x64)</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=14632</URL>
             <Download>https://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe</Download>
@@ -119,15 +119,15 @@
             <Name>Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=13523</URL>
             <Download>https://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe</Download>
-        </Redistributable>
+        </Redistributable> -->
         <Redistributable>
             <Name>Microsoft Visual C++ 2010 Service Pack 1 Redistributable Package MFC Security Update</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26999</URL>
             <Download>https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x86" Release="2010" Install="/CEIPconsent /norestart /passive">
-        <Redistributable>
+    <Platform Architecture="x86" Release="2010" Install="/passive /norestart">
+<!--         <Redistributable>
             <Name>Microsoft Visual C++ 2010 Redistributable Package (x86)</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=5555</URL>
             <Download>https://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe</Download>
@@ -136,28 +136,28 @@
             <Name>Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=8328</URL>
             <Download>https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe</Download>
-        </Redistributable>
+        </Redistributable> -->
         <Redistributable>
             <Name>Microsoft Visual C++ 2010 Service Pack 1 Redistributable Package MFC Security Update</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=26999</URL>
             <Download>https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x64" Release="2012" Install="/CEIPconsent /norestart /passive">
+    <Platform Architecture="x64" Release="2012" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Visual C++ Redistributable for Visual Studio 2012 Update 4</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=30679</URL>
             <Download>https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x86" Release="2012" Install="/CEIPconsent /norestart /passive">
+    <Platform Architecture="x86" Release="2012" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Visual C++ Redistributable for Visual Studio 2012 Update 4</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=30679</URL>
             <Download>https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x64" Release="2013" Install="/CEIPconsent /norestart /passive">
+    <Platform Architecture="x64" Release="2013" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
@@ -169,7 +169,7 @@
             <Download>http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x64.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x86" Release="2013" Install="/CEIPconsent /norestart /passive">
+    <Platform Architecture="x86" Release="2013" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
@@ -181,28 +181,32 @@
             <Download>http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x64" Release="2015" Install="/CEIPconsent /norestart /passive">
-        <Redistributable>
-            <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
-            <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe</Download>
-        </Redistributable>
+    <Platform Architecture="x64" Release="2015" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Microsoft Visual C++ 2015 Redistributable Update 3</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=53840</URL>
             <Download>https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe</Download>
         </Redistributable>
     </Platform>
-    <Platform Architecture="x86" Release="2015" Install="/CEIPconsent /norestart /passive">
-        <Redistributable>
-            <Name>Visual C++ Redistributable Packages for Visual Studio 2013</Name>
-            <URL>https://www.microsoft.com/en-us/download/details.aspx?id=40784</URL>
-            <Download>https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe</Download>
-        </Redistributable>
+    <Platform Architecture="x86" Release="2015" Install="/install /passive /norestart">
         <Redistributable>
             <Name>Microsoft Visual C++ 2015 Redistributable Update 3</Name>
             <URL>https://www.microsoft.com/en-us/download/details.aspx?id=53840</URL>
             <Download>https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe</Download>
+        </Redistributable>
+    </Platform>
+    <Platform Architecture="x64" Release="2017" Install="/install /passive /norestart">
+        <Redistributable>
+            <Name>Microsoft Visual C++ Redistributable for Visual Studio 2017</Name>
+            <URL>https://www.visualstudio.com/downloads/</URL>
+            <Download>https://download.microsoft.com/download/3/b/f/3bf6e759-c555-4595-8973-86b7b4312927/vc_redist.x64.exe</Download>
+        </Redistributable>
+    </Platform>
+    <Platform Architecture="x86" Release="2017" Install="/install /passive /norestart">
+        <Redistributable>
+            <Name>Microsoft Visual C++ Redistributable for Visual Studio 2017</Name>
+            <URL>https://www.visualstudio.com/downloads/</URL>
+            <Download>https://download.microsoft.com/download/1/f/e/1febbdb2-aded-4e14-9063-39fb17e88444/vc_redist.x86.exe</Download>
         </Redistributable>
     </Platform>
 </Redistributables>
