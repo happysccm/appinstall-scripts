@@ -1,5 +1,5 @@
 <#
-    .Synopsis
+    .SYNOPSIS
         Installs and/or downloads the Visual C++ Redistributables listed in an external XML file.
 
     .DESCRIPTION
@@ -28,8 +28,8 @@
     .NOTES   
         Name: Install-VisualCRedistributables.ps1
         Author: Aaron Parker
-        Version: 1.0
-        DateUpdated: 2017-04-30
+        Version: 1.1
+        DateUpdated: 2017-05-02
 
     .LINK
         http://stealthpuppy.com
@@ -60,6 +60,10 @@
 
         Description:
         Downloads and installs the Visual C++ Redistributables listed in VisualCRedistributables.xml.
+
+    .CHANGELOG
+    02/05/2017: Added <ShortName> to the XML and updated script to use ShortName instead of Name as the target folder
+
 #>
 
 [CmdletBinding(SupportsShouldProcess = $True, ConfirmImpact = "Low")]
@@ -86,12 +90,6 @@ BEGIN {
 
 PROCESS {
 
-    Function Write-Log {
-        param ([string]$Path, [string]$Entry)
-        Write-Log -Path $logPath -Entry "[$(Get-Date)] $Entry" | Out-File -FilePath $Path -Append
-        Return $?
-    }
-
     # Read the specifed XML document    
     $xmlContent = ( Select-Xml -Path $File -XPath "/Redistributables/Platform" ).Node
 
@@ -104,23 +102,23 @@ PROCESS {
         $arg = $platform | Select-Object -ExpandProperty Install
         
         # Step through each redistributable defined in the XML
-        ForEach ($redistributable in $platform.Redistributable ) {
+        ForEach ($redistributable in $platform.Redistributable) {
             
             # Create variables from the content to simplify references below
             $uri = $redistributable.Download
             $filename = $uri.Substring($uri.LastIndexOf("/") + 1)
-            $target= "$((Get-Item $Path).FullName)\$rel\$plat\$($redistributable.Name)"
+            $target= "$((Get-Item $Path).FullName)\$rel\$plat\$($redistributable.ShortName)"
 
-            # Create the folder to store the downloaded file
+            # Create the folder to store the downloaded file. Skip if it exists
             If (!(Test-Path -Path $target)) {
                 If ($pscmdlet.ShouldProcess($target, "Create")) {
                     New-Item -Path $target -Type Directory -Force
                 }
             } Else {
-                Write-Verbose "Folder '$($redistributable.Name)' exists. Skipping."
+                Write-Verbose "Folder '$($redistributable.ShortName)' exists. Skipping."
             }
 
-            # Download the Redistributable to the target path
+            # Download the Redistributable to the target path. Skip if it exists
             If (!(Test-Path -Path "$target\$filename" -PathType 'Leaf')) {
                 If ($pscmdlet.ShouldProcess("$uri", "Download")) {
                     Invoke-WebRequest -Uri $uri -OutFile "$target\$filename"
@@ -138,5 +136,3 @@ PROCESS {
         }
     }
 }
-
-#end
